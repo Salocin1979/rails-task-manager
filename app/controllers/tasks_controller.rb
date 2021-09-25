@@ -1,6 +1,9 @@
 class TasksController < ApplicationController
     before_action :find_task, only: [:show, :edit, :update, :destroy]
 
+    def home
+    end
+    
     def index
         @tasks = Task.all
     end
